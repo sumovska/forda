@@ -1,0 +1,40 @@
+/**
+ * TABLE OF CONTENTS:
+ *
+ * RESET:
+ * ======
+ * reset....................Reset all element styles.
+ *
+ * COMPONENTS:
+ * ===========
+ * product..................Image & the description of the product.
+ *
+ * DEBUG:
+ * ======
+ * _debug...................Debug classes.
+ *
+ **/
+
+/* RESET: */
+@import url('reset.css');
+
+/* STYLES:; */
+@import url('style.css');
+
+/* COMPONENTS: */
+@import url('components/site-header.css');
+@import url('components/header-nav.css');
+@import url('components/contact-form.css');
+@import url('components/content-slide.css');
+@import url('components/product.css');
+@import url('components/promo-block.css');
+@import url('components/catalog.css');
+@import url('components/catalog-menu.css');
+@import url('components/feedback-slider.css');
+@import url('components/site-footer.css');
+
+/* PLUGINS: */
+@import url('plugins/flexslider/flexslider.css');
+
+/* DEBUG: */
+@import url('_debug/_debug.css');

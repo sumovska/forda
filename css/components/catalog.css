@@ -1,0 +1,31 @@
+/* COMPONENT:
+   ==========================================================================
+   Catalog
+   ========================================================================== */
+.catalog {
+    padding-bottom: 60px;
+}
+
+.catalog + .catalog {
+    padding-top: 50px;
+
+    border-top: 1px solid hsl(0,0%,93%);
+}
+
+.catalog__container {
+    position: relative;
+
+	float: left;
+
+	width: 50%;
+}
+
+/* SUB-SECTION:
+   --------------------------------------------
+   Catalog: responsive
+   -------------------------------------------- */
+@media screen and (max-width: 900px) {
+    .catalog__container {
+        width: 100%;
+    }
+}

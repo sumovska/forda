@@ -1,0 +1,96 @@
+/* COLORS */
+/*
+
+header: #e12385-#5f0834;
+form: #e12385-#5f0834, opacity 75%;
+
+blue: #23abe3;
+pink: #e12385;
+yellow: #e6db29;
+gray: #7c7b7b; hsl(60,0%,48%);
+
+product header: hsl(198,77%,51%);
+product text: hsl(0,0%,44%);
+
+promo: #e4e4e3;
+
+footer: #e12385;
+
+ */
+
+/* ==========================================================================
+   COMPONENT: layout
+   ========================================================================== */
+.container {
+	margin: 0 auto;
+
+	max-width: 1170px;
+	width: 96%;
+}
+
+
+.bg-blue   { background-color: hsl(198,77%,51%); }
+.bg-pink   { background-color: hsl(329,76%,51%); }
+.bg-yellow { background-color: hsl(57,79%,53%);  }
+.bg-gray   { background-color: hsl(60,2%,89%);   }
+
+
+
+/* ==========================================================================
+   STYLES: styles
+   ========================================================================== */
+* {
+   -webkit-box-sizing: border-box;
+      -moz-box-sizing: border-box;
+           box-sizing: border-box;
+}
+
+body {
+   font-family: 'GOST', Arial, sans-serif;
+   font-size: 100%;
+}
+
+
+/* ==========================================================================
+   STYLES: fonts
+   ========================================================================== */
+@font-face {
+   font-family: 'GOST';
+   src: url('../fonts/GOST_B_0.ttf') format('truetype');
+   font-weight: normal;
+   font-style: normal;
+}
+
+
+/* ==========================================================================
+   STYLES: sprites
+   ========================================================================== */
+.ico-delivery,
+.ico-dealer,
+.ico-store,
+.ico-partners,
+.ico-service {
+   display: inline-block;
+   overflow: hidden;
+
+   text-indent: -9999px;
+   text-align: left;
+
+   background: url('../img/ico/ico.png') no-repeat;
+}
+
+.ico-delivery { background-position: -1px   -0px; width: 99px; height: 62px; }
+.ico-dealer   { background-position: -1px  -63px; width: 72px; height: 67px; }
+.ico-store    { background-position: -1px -131px; width: 72px; height: 72px; }
+.ico-partners { background-position: -1px -204px; width: 61px; height: 68px; }
+.ico-service  { background-position: -1px -273px; width: 49px; height: 59px; }
+
+
+/* ==========================================================================
+   STYLES: tools
+   ========================================================================== */
+.clear-group:after {
+   content: " ";
+   display: table;
+   clear: both;
+}

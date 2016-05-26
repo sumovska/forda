@@ -1,0 +1,150 @@
+/* COMPONENT:
+   ==========================================================================
+   Product
+   ========================================================================== */
+.product {
+    position: relative;
+
+    float: left;
+    margin-bottom: 40px;
+    padding: 20px;
+
+    width: 50%;
+}
+
+.product__header {
+    margin-bottom: 15px;
+
+    color: hsl(198,77%,51%);
+}
+
+.product__image {
+    position: relative;
+
+    height: 85px;
+    margin-bottom: 40px;
+
+    text-align: center;
+}
+
+.product__image:before,
+.product__image:after {
+    position: absolute;
+    left: -25px;
+
+    content: "\ff0b";
+    display: block;
+
+    color: #222;
+    font-size: 20px;
+}
+
+.product__image:before {
+    top: -15px;
+}
+
+.product__image:after {
+    bottom: -15px;
+}
+
+.product__image > img {
+    max-height: 100%;
+}
+
+.product__image-art {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+
+    display: block;
+}
+
+.product__image-art--900,
+.product__image-art--520 {
+    display: none;
+}
+
+.product__image-art:before,
+.product__image-art:after {
+    position: absolute;
+    right: -25px;
+
+    content: "\ff0b";
+    display: block;
+
+    color: #222;
+    font-size: 20px;
+}
+
+.product__image-art:before {
+    top: -15px;
+}
+
+.product__image-art:after {
+    bottom: -15px;
+}
+
+.product__title {
+    margin-bottom: 5px;
+
+    font-size: 24px;
+    line-height: 24px;
+}
+
+.product__title-detail {
+    font-size: 12px;
+    line-height: 15px;
+}
+
+.product__description {
+    color: hsl(0,0%,44%);
+    /*font-size: 12px;*/
+    font-size: 15px;
+    /*line-height: 15px;*/
+    line-height: 19px;
+}
+
+.product__reference {
+    color: hsl(0,0%,44%);
+    font-size: 14px;
+    text-align: right;
+}
+
+.product__reference > a {
+    color: hsl(0,0%,44%);
+}
+
+.product__reference > a:hover {
+    color: hsl(198,77%,51%);
+    text-decoration: none;
+}
+
+/* SUB-SECTION:
+   --------------------------------------------
+   Product: responsive
+   -------------------------------------------- */
+@media screen and (max-width: 900px) {
+    .product {
+        text-align: center;
+    }
+    .product__image {
+        margin-bottom: 25px;
+    }
+    .product__image-art--900 {
+        display: block;
+    }
+    .product__reference {
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 520px) {
+    .product {
+        width: 100%;
+    }
+    .product__image-art--520 {
+        display: block;
+    }
+}

@@ -1,0 +1,39 @@
+/* COMPONENT:
+   ==========================================================================
+   Site Footer
+   ========================================================================== */
+.site-footer {
+    padding-top: 80px;
+    padding-bottom: 80px;
+
+    color: #fff;
+
+    background-color: hsl(329,76%,51%);
+}
+
+.site-footer__section {
+    float: left;
+
+    width: 50%;
+}
+
+.site-footer .contact-form__promo {
+  margin-top: 45px;
+}
+
+/* SUB-SECTION:
+   --------------------------------------------
+   Site Footer: responsive
+   -------------------------------------------- */
+@media screen and (max-width: 768px) {
+    .site-footer {
+        padding-top: 0;
+        padding-bottom: 30px;
+    }
+    .site-footer__section {
+        width: 100%;
+    }
+    .site-footer .contact-form__promo {
+        margin-top: 60px;
+    }
+}

@@ -1,0 +1,65 @@
+/* COMPONENT:
+   ==========================================================================
+   Header Nav
+   ========================================================================== */
+.header-nav {
+	float: right;
+}
+
+.header-nav__navigation {
+	float: left;
+	padding-top: 20px;
+}
+
+.header-nav__navigation-item {
+	float: left;
+}
+
+.header-nav__navigation-item + .header-nav__navigation-item {
+	margin-left: 25px;
+}
+
+.header-nav__navigation-link {
+	color: hsla(0,0%,100%,0.75);
+	font-size: 14px;
+}
+
+.header-nav__navigation-link:hover {
+	color: #fff;
+	text-decoration: none;
+}
+
+.header-nav__phone {
+	float: right;
+	margin-left: 40px;
+	padding-top: 20px;
+
+	color: hsla(0,0%,100%,0.75);
+	font-size: 16px;
+}
+
+/* SUB-SECTION:
+   --------------------------------------------
+   Header Nav: responsive
+   -------------------------------------------- */
+@media screen and (max-width: 640px) {
+	.header-nav,
+	.header-nav__navigation,
+	.header-nav__phone {
+		float: none;
+		margin: 0;
+		width: 100%;
+
+		text-align: center;
+	}
+	.header-nav__navigation {
+		padding-top: 40px;
+	}
+	.header-nav__phone {
+		padding-top: 30px;
+	}
+	.header-nav__navigation-item {
+		display: inline-block;
+		float: none;
+	}
+}

@@ -1,0 +1,149 @@
+/* COMPONENT:
+   ==========================================================================
+   Feedback Slider (feedback-slider)
+   ========================================================================== */
+.feedback-slider {
+    position: relative;
+
+    margin-bottom: 120px;
+    padding: 60px;
+    width: 100%;
+
+    border: 1px solid hsl(198,77%,51%);
+    border-radius: 3px;
+}
+
+.feedback-slider:before {
+    position: absolute;
+    top: -30px;
+    left: 50%;
+    z-index: 10;
+
+    content: "\00a0";
+    display: block;
+
+    margin-left: -15px;
+
+    width: 0;
+    height: 0;
+
+    border-top: 15px solid transparent;
+    border-right: 15px solid transparent;
+    border-bottom: 15px solid hsl(198,77%,51%);
+    border-left: 15px solid transparent;
+}
+
+.feedback-slider:after {
+    position: absolute;
+    top: -26px;
+    left: 50%;
+    z-index: 100;
+
+    content: "\00a0";
+    display: block;
+
+    margin-left: -13px;
+
+    width: 0;
+    height: 0;
+
+    border-top: 13px solid transparent;
+    border-right: 13px solid transparent;
+    border-bottom: 13px solid hsl(0,0%,100%);
+    border-left: 13px solid transparent;
+}
+
+.feedback-slider__title {
+    margin-bottom: 20px;
+
+    color: hsl(198,77%,51%);
+    font-size: 24px;
+}
+
+.feedback-slider__text {
+    font-size: 16px;
+    font-style: italic;
+    line-height: 18px;
+}
+
+/* SUB-SECTION:
+   --------------------------------------------
+   Feedback Slider: override flexslider styles
+   -------------------------------------------- */
+.feedback-slider .flexslider {
+    margin-bottom: 0;
+}
+
+.feedback-slider .flex-control-nav {
+    position: relative;
+    bottom: -100px;
+}
+
+.feedback-slider .flex-prev,
+.feedback-slider .flex-next {
+    position: absolute;
+    top: 50%;
+
+    margin-top: -12px;
+
+    color: hsl(198,77%,51%);
+    font-family: Arial, sans-serif;
+    font-size: 24px;
+    text-decoration: none;
+}
+
+.feedback-slider .flex-prev {
+    left: -25px;
+}
+
+.feedback-slider .flex-next {
+    right: -26px;
+}
+
+.feedback-slider .flex-control-paging li a {
+    width: 15px;
+    height: 15px;
+
+    background: #fff;
+    border: 1px solid hsl(198,77%,51%);
+    border-radius: 50%;
+    box-shadow: none;
+}
+
+.feedback-slider .flex-control-paging li a:hover,
+.feedback-slider .flex-control-paging li a.flex-active {
+    background: hsl(198,77%,51%);
+}
+
+/* SUB-SECTION:
+   --------------------------------------------
+   Feedback Slider: responsive
+   -------------------------------------------- */
+@media screen and (max-width: 1080px) {
+    .feedback-slider .flex-prev,
+    .feedback-slider .flex-next {
+        top: auto;
+        bottom: -40px;
+    }
+    .feedback-slider .flex-prev {
+        left: 5px;
+    }
+    .feedback-slider .flex-next {
+        right: 5px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .feedback-slider {
+        margin-bottom: 90px;
+    }
+}
+
+@media screen and (max-width: 640px) {
+    .feedback-slider {
+        padding: 40px;
+    }
+    .feedback-slider .flex-control-nav {
+        bottom: -80px;
+    }
+}

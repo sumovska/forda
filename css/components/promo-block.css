@@ -1,0 +1,52 @@
+/* COMPONENT:
+   ==========================================================================
+   Promo Block
+   ========================================================================== */
+.promo-block {
+	position: relative;
+
+	margin: 0 auto;
+	max-width: 450px;
+	padding-bottom: 55px;
+
+    text-align: center;
+}
+
+.promo-block + .promo-block {
+	padding-top: 55px;
+}
+
+.promo-block + .promo-block:before {
+	position: absolute;
+    top: -10px;
+    left: 48%;
+
+    content: "\ff0b";
+    display: block;
+
+    color: hsl(198,77%,51%);
+    font-size: 21px
+}
+
+.promo-block__title {
+	margin-bottom: 25px;
+
+	color: hsl(198,77%,51%);
+	font-size: 30px;
+	line-height: 30px;
+}
+
+.promo-block__description {
+	color: hsl(0,0%,44%);
+	font-size: 16px;
+	line-height: 19px;
+}
+
+.promo-block__ico {
+	margin-bottom: 25px;
+}
+
+/* SUB-SECTION:
+   --------------------------------------------
+   Product: responsive
+   -------------------------------------------- */

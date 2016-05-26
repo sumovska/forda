@@ -1,0 +1,507 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Forda Print</title>
+
+    <link rel="stylesheet" href="css/import.css">
+
+    <!--[if lt IE 9]>
+    <script src="js/vendor/html5shiv.min.js"></script>
+    <script src="js/vendor/html5-3.6-respond-1.1.0.min.js"></script>
+    <![endif]-->
+
+</head>
+
+<body>
+
+<!--[if lt IE 8]>
+<p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+<![endif]-->
+
+
+<!-- SITE HEADER start -->
+<header class="site-header" data-ui-component="site-header">
+    <div class="container  clear-group">
+
+        <div class="site-header__logo">
+            <a href="index.html">
+                <img src="img/logo.png" alt="Forda Print">
+            </a>
+        </div><!-- .header-logo -->
+
+        <div class="header-nav" data-ui-component="header-nav">
+            <nav class="header-nav__navigation">
+                <ul>
+                    <li class="header-nav__navigation-item">
+                        <a class="header-nav__navigation-link" href="index.html#about" data-scroll>О нас</a>
+                    </li>
+                    <li class="header-nav__navigation-item">
+                        <a class="header-nav__navigation-link" href="index.html#feedback" data-scroll>Отзывы</a>
+                    </li>
+                </ul>
+            </nav><!-- .header-nav__navigation -->
+            <div class="header-nav__phone">
+                <p>+7 (812) 380 85 55</p>
+            </div><!-- .header-nav__phone -->
+        </div><!-- .header-nav -->
+
+    </div><!-- .container -->
+
+    <div class="container">
+
+        <section class="contact-form" data-ui-component="header-contact-form">
+
+            <article class="contact-form__promo">
+                <h2>Получите 5&#37; скидки</h2>
+                <h3>на оборудование и комплектующие</h3>
+            </article>
+
+            <form class="contact-form__form" method="post">
+                <div class="contact-form__field">
+                    <label class="contact-form__label" for="name">Напишите имя, как к Вам обращаться</label>
+                    <input class="contact-form__input" type="text" name="name" autocomplete="off" pattern="[а-яА-Яa-zA-Z'\s]{3,100}" required placeholder="Иванов Иван" oninvalid="setCustomValidity('Допускается кириллица и латиница в количестве от 3 до 100 символов')" onchange="setCustomValidity('')"/>
+                </div><!-- .contact-form__field -->
+                <div class="contact-form__field">
+                    <label class="contact-form__label" for="phoe">Напишите телефон, Вам позвонит менеджер</label>
+                    <input class="contact-form__input" type="text" name="phone" autocomplete="off" pattern="[0-9+-\s()]{7,20}" required placeholder="+7 (812) 380-85-55" oninvalid="setCustomValidity('Допускаются цифры, пробелы, круглые скобки и знаки сложения и вычитания в количестве от 7 до 20 символов')" onchange="setCustomValidity('')"/>
+                </div><!-- .contact-form__field -->
+                <div class="contact-form__field">
+                    <button class="contact-form__btn" type="submit">Получить 5&#37; скидку</button>
+                    <p class="contact-form__message-success" hidden>Ваша скидка уже в пути!</p>
+                    <p class="contact-form__message-failure" hidden>Упс..возникла проблемка :(</p>
+                </div><!-- .contact-form__field -->
+            </form><!-- .contact-form__form -->
+        </section><!-- .contact-form -->
+
+    </div><!-- .container -->
+
+</header><!-- .site-header -->
+<!-- SITE HEADER end -->
+
+
+<!-- CATALOG MENU start -->
+<nav class="catalog-menu"  data-ui-component="main-catalog-menu">
+    <ul class="catalog-menu__list  clear-group">
+        <li class="[ catalog-menu__item  catalog-menu__item--inc ]">
+            <a class="catalog-menu__title" href="index.html#inc" data-scroll>Чернила</a>
+        </li>
+        <li class="[ catalog-menu__item  catalog-menu__item--equipment ]">
+            <a class="catalog-menu__title" href="index.html#equipment" data-scroll>Оборудование</a>
+        </li>
+        <li class="[ catalog-menu__item  catalog-menu__item--materials ]">
+            <a class="catalog-menu__title" href="index.html#materials" data-scroll>Материалы</a>
+        </li>
+        <li class="[ catalog-menu__item  catalog-menu__item--service ]">
+            <a class="catalog-menu__title" href="index.html#about" data-scroll>Сервис</a>
+        </li>
+    </ul>
+</nav><!-- .catalog-menu -->
+<!-- CATALOG MENU end -->
+
+
+<!-- CATALOG start -->
+<section class="content-slide" data-ui-component="content-slide">
+    <div class="container">
+
+        <!-- CATALOG BLOCK start -->
+        <section class="catalog  clear-group" data-ui-component="catalog">
+
+            <h2 class="content-slide__title" id="equipment">Оборудование</h2>
+
+            <div class="catalog__container">
+                <!-- PRODUCT start -->
+                <article class="product">
+                    <header class="product__header">
+                        <figure class="product__image">
+                            <img src="img/content/catalog_printer_1.png" alt="SUNIKA SK-2160">
+                            <span class="[ product__image-art  product__image-art--520 ]"></span>
+                        </figure>
+                        <h3 class="product__title">SUNIKA SK-2160</h3>
+                    </header>
+                    <p class="product__description">Ширина печати: 160 см</p>
+                    <p class="product__description">Производительность: до 36 м² в час</p>
+                    <p class="product__description">Чернила: эко-сольвентные</p>
+                    <p class="product__description">Печатные головы: Epson DX-5</p>
+                    <p class="product__description">Производство: Китай</p>
+                </article><!-- .product -->
+                <!-- PRODUCT end -->
+                <!-- PRODUCT start -->
+                <article class="product">
+                    <header class="product__header">
+                        <figure class="product__image">
+                            <img src="img/content/catalog_printer_2.png" alt="MAXIMA GT2">
+                            <span class="[ product__image-art  product__image-art--900 ]"></span>
+                        </figure>
+                        <h3 class="product__title">MAXIMA GT2</h3>
+                    </header>
+                    <p class="product__description">Ширина печати: 320 см</p>
+                    <p class="product__description">Производительность: до 60 м² в час</p>
+                    <p class="product__description">Чернила: лайт-сольвентные</p>
+                    <p class="product__description">Печатные головы: Konica Minolta 512, 14 pl</p>
+                    <p class="product__description">Производство: Турция</p>
+                </article><!-- .product -->
+                <!-- PRODUCT end -->
+            </div><!-- .catalog__container -->
+
+            <div class="catalog__container">
+                <!-- PRODUCT start -->
+                <article class="product">
+                    <header class="product__header">
+                        <figure class="product__image">
+                            <img src="img/content/catalog_printer_3.png" alt="MAXIMA INNO S">
+                            <span class="[ product__image-art  product__image-art--520 ]"></span>
+                        </figure>
+                        <h3 class="product__title">MAXIMA INNO S</h3>
+                    </header>
+                    <p class="product__description">Ширина печати: 320 см</p>
+                    <p class="product__description">Производительность: до 120 м² в час</p>
+                    <p class="product__description">Чернила: лайт-сольвентные, УФ</p>
+                    <p class="product__description">Печатные головы: Konica Minolta 1024, 14 pl</p>
+                    <p class="product__description">Производство: Турция</p>
+                </article><!-- .product -->
+                <!-- PRODUCT end -->
+                <!-- PRODUCT start -->
+                <article class="product">
+                    <header class="product__header">
+                        <figure class="product__image">
+                            <img src="img/content/catalog_printer_4.jpg" alt="KR HYBRID UV">
+                            <span class="[ product__image-art  product__image-art--4 ]"></span>
+                        </figure>
+                        <h3 class="product__title">KR HYBRID UV</h3>
+                    </header>
+                    <p class="product__description">Планшетный УФ-принтер, 3х2 м</p>
+                    <p class="product__description">Производительность: до 160 м² в час</p>
+                    <p class="product__description">Чернила: УФ</p>
+                    <p class="product__description">Печатные головы: Konica Minolta 512/1024/1024i</p>
+                    <p class="product__description">Производство: Китай</p>
+                </article><!-- .product -->
+                <!-- PRODUCT end -->
+            </div><!-- .catalog__container -->
+
+            <p class="product__reference">Еще больше оборудования на <a href="http://www.forda-online.ru">www.forda-online.ru</a></p>
+
+        </section><!-- .catalog -->
+        <!-- CATALOG BLOCK end -->
+
+        <!-- CATALOG BLOCK start -->
+        <section class="catalog  clear-group" data-ui-component="catalog">
+
+            <h2 class="content-slide__title" id="inc">Чернила</h2>
+
+            <div class="catalog__container">
+                <!-- PRODUCT start -->
+                <article class="product">
+                    <header class="product__header">
+                        <figure class="product__image">
+                            <img src="img/content/catalog_inc_1.png" alt="УФ-чернила">
+                            <span class="[ product__image-art  product__image-art--520 ]"></span>
+                        </figure>
+                        <h3 class="product__title">УФ-чернила</h3>
+                        <span class="product__title-detail">BSK Triangle</span>
+                    </header>
+                    <p class="product__description">УФ-отверждаемые на акрилатной основе</p>
+                    <p class="product__description">Для печатающих головок от 6-40пл</p>
+                    <p class="product__description">Konica Minolta&reg;, Ricoh&reg;, ToshibaTEC&reg;, Dimatix&reg;</p>
+                    <p class="product__description">Насыщенный красный цвет</p>
+                    <p class="product__description">Не трескаются при резке и фрезеровке</p>
+                    <p class="product__description">Высокая устойчивость к внешним факторам</p>
+                    <p class="product__description">Высокая скорость печати</p>
+                    <p class="product__description">Мгновенная скорость высыхания</p>
+                </article><!-- .product -->
+                <!-- PRODUCT end -->
+                <!-- PRODUCT start -->
+                <article class="product">
+                    <header class="product__header">
+                        <figure class="product__image">
+                            <img src="img/content/catalog_inc_2.png" alt="ЛАЙТ-сольвентные чернила">
+                            <span class="[ product__image-art  product__image-art--900 ]"></span>
+                        </figure>
+                        <h3 class="product__title">ЛАЙТ-сольвентные чернила</h3>
+                        <span class="product__title-detail">PDQ/PNX Triangle</span>
+                    </header>
+                    <p class="product__description">Сольвентные чернила</p>
+                    <p class="product__description">Для печатающих головок</p>
+                    <p class="product__description">от 9-25 пл / 15-35 пл</p>
+                    <p class="product__description">Материалы для печати: баннерные ткани, винил, самоклеющиеся пленки, сетка, скроллерная бумага</p>
+                    <p class="product__description">Не содержат Циклогексанон (С6Н10О)</p>
+                </article><!-- .product -->
+                <!-- PRODUCT end -->
+            </div><!-- .catalog__container -->
+
+            <div class="catalog__container">
+                <!-- PRODUCT start -->
+                <article class="product">
+                    <header class="product__header">
+                        <figure class="product__image">
+                            <img src="img/content/catalog_inc_3.png" alt="Жесткий сольвент">
+                            <span class="[ product__image-art  product__image-art--520 ]"></span>
+                        </figure>
+                        <h3 class="product__title">Жесткий сольвент</h3>
+                        <span class="product__title-detail">SGD Triangle</span>
+                    </header>
+                    <p class="product__description">Сольвентные чернила</p>
+                    <p class="product__description">Для печатающих головок от 14-42 пл</p>
+                    <p class="product__description">Материалы для печати: баннерные ткани, винил, самоклеющиеся пленки, сетка, скроллерная бумага</p>
+                    <p class="product__description">Минимальным содержанием вредных компонентов</p>
+                </article><!-- .product -->
+                <!-- PRODUCT end -->
+                <!-- PRODUCT start -->
+                <article class="product">
+                    <header class="product__header">
+                        <figure class="product__image">
+                            <img src="img/content/catalog_inc_4.png" alt="ЭКО-сольвентные чернила">
+                            <span class="product__image-art"></span>
+                        </figure>
+                        <h3 class="product__title">ЭКО-сольвентные чернила</h3>
+                        <span class="product__title-detail">Inkrang ES</span>
+                    </header>
+                    <p class="product__description">Совместимы с экосольвентными, сольвентными принтерами</p>
+                    <p class="product__description">Для печатающих головок EPSON «DX»: Roland, Mutoh, Mimaki, Optimum Digital и др.</p>
+                    <p class="product__description">Отсутствие вредных хим. компонентов.</p>
+                    <p class="product__description">Практически полное отсутствие запаха.</p>
+                    <p class="product__description">6 основных цветов (CMYKLcLm)</p>
+                </article><!-- .product -->
+                <!-- PRODUCT end -->
+            </div><!-- .catalog__container -->
+
+            <p class="product__reference">Еще больше оборудования на <a href="http://www.forda-online.ru">www.forda-online.ru</a></p>
+
+        </section><!-- .catalog -->
+        <!-- CATALOG BLOCK end -->
+
+        <!-- CATALOG BLOCK start -->
+        <section class="catalog  clear-group" data-ui-component="catalog">
+
+            <h2 class="content-slide__title" id="materials">Материалы</h2>
+
+            <div class="catalog__container">
+                <!-- PRODUCT start -->
+                <article class="product">
+                    <header class="product__header">
+                        <figure class="product__image">
+                            <img src="img/content/catalog_paper.jpg" alt="Обои на бумажной основе">
+                            <span class="[ product__image-art  product__image-art--520 ]"></span>
+                        </figure>
+                        <h3 class="product__title">Обои на бумажной основе</h3>
+                        <span class="product__title-detail">Digi Fort</span>
+                    </header>
+                    <p class="product__description">H - 130 см, L - 50 м</p>
+                    <p class="product__description">Вес бумаги:  90+15 г/м²</p>
+                    <p class="product__description">Виниловое покрытие: 210+15 г/м²</p>
+                    <p class="product__description">Общий вес: 300+15 г/м²</p>
+                    <p class="product__description">10 текстур</p>
+                    <p class="product__description">Печать: сольвентная, экосольвентная, уф-отверждаемыми чернилами</p>
+                    <p class="product__description">Производство - Голландия</p>
+                </article><!-- .product -->
+                <!-- PRODUCT end -->
+                <!-- PRODUCT start -->
+                <article class="product">
+                    <header class="product__header">
+                        <figure class="product__image">
+                            <img src="img/content/catalog_skylight.jpg" alt="Бумага VI SkyLight">
+                            <span class="[ product__image-art  product__image-art--900 ]"></span>
+                        </figure>
+                        <h3 class="product__title">Бумага VI SkyLight</h3>
+                    </header>
+                    <p class="product__description">H - 127, 160 см, L - 100 м</p>
+                    <p class="product__description">Плотность: 135 г/м², 170 г/м², 200 г/м²</p>
+                    <p class="product__description">Светорассеивающая</p>
+                    <p class="product__description">Покрытие: матовая</p>
+                    <p class="product__description">Печать: сольвентная, экосольвентная, уф-отверждаемыми чернилами.</p>
+                    <p class="product__description">Производство- Испания</p>
+                </article><!-- .product -->
+                <!-- PRODUCT end -->
+            </div><!-- .catalog__container -->
+
+            <div class="catalog__container">
+                <!-- PRODUCT start -->
+                <article class="product">
+                    <header class="product__header">
+                        <figure class="product__image">
+                            <img src="img/content/catalog_backlit.jpg" alt="Пленка Backlit film No 8 Eco solvent">
+                            <span class="[ product__image-art  product__image-art--520 ]"></span>
+                        </figure>
+                        <h3 class="product__title">Пленка Backlit film No 8 Eco solvent</h3>
+                    </header>
+                    <p class="product__description">H - 127, 152,5 см, L - 50 м</p>
+                    <p class="product__description">Плотность: 180 г/м²</p>
+                    <p class="product__description">Толщина: 195 мкм</p>
+                    <p class="product__description">Светорассеивающая, бесклеевая</p>
+                    <p class="product__description">Покрытие: полуглянец</p>
+                    <p class="product__description">Печать: сольвентная, экосольвентная, уф-отверждаемыми чернилами.</p>
+                    <p class="product__description">Производство- Китай</p>
+                </article><!-- .product -->
+                <!-- PRODUCT end -->
+                <!-- PRODUCT start -->
+                <article class="product">
+                    <header class="product__header">
+                        <figure class="product__image">
+                            <img src="img/content/catalog_skylight.jpg" alt="Фотобумага">
+                            <span class="product__image-art"></span>
+                        </figure>
+                        <h3 class="product__title">Фотобумага</h3>
+                        <span class="product__title-detail">SP(SOPH) Solvent  photo paper</span>
+                    </header>
+                    <p class="product__description">H - 1,07, 1,37, 1,52 м, L - 50 м</p>
+                    <p class="product__description">Плотность: 220/210 г/м²</p>
+                    <p class="product__description">Толщина: 195 мкм</p>
+                    <p class="product__description">Покрытие: глянец, матовая</p>
+                    <p class="product__description">Цвет лицо/задник: белый/белый.</p>
+                    <p class="product__description">Печать: сольвентная, экосольвентная, уф-отверждаемыми чернилами.</p>
+                    <p class="product__description">Производство- Корея</p>
+                </article><!-- .product -->
+                <!-- PRODUCT end -->
+            </div><!-- .catalog__container -->
+
+            <p class="product__reference">Еще больше оборудования на <a href="http://www.forda-online.ru">www.forda-online.ru</a></p>
+
+        </section><!-- .catalog -->
+        <!-- CATALOG BLOCK end -->
+
+    </div><!-- .container -->
+</section><!-- .content-slide -->
+<!-- CATALOG end -->
+
+
+<!-- PROMO start -->
+<section class="content-slide  bg-gray" data-ui-component="content-slide-block">
+    <div class="container">
+
+        <h2 class="content-slide__title" id="about">Наши преимущества</h2>
+
+        <!-- PROMO ITEM start -->
+        <article class="promo-block" data-ui-component="promo-block">
+            <span class="[ promo-block__ico  ico-service ]"></span>
+            <h3 class="promo-block__title">Сервис</h3>
+            <p class="promo-block__description">Технические консультации специалистами сервис-центра и менеджерами по продажам оборудования.</p>
+            <p class="promo-block__description">Гарантийное и послегарантийное обслуживание оборудования.</p>
+            <p class="promo-block__description">Заключение договора на первоочередное абонентское обслуживание оборудования, проведение полугодовой и годовой профилактики за фиксированную абонентскую плату.</p>
+        </article><!-- .promo-block -->
+        <!-- PROMO ITEM end -->
+
+        <!-- PROMO ITEM start -->
+        <article class="promo-block" data-ui-component="promo-block">
+            <span class="[ promo-block__ico  ico-partners ]"></span>
+            <h3 class="promo-block__title">Нам 20 лет</h3>
+            <p class="promo-block__description">Мы серьезные партнеры и надежные поставщики для нескольких тысяч рекламно-производственных компаний и дизайн-студий по всей стране.</p>
+        </article><!-- .promo-block -->
+        <!-- PROMO ITEM end -->
+
+        <!-- PROMO ITEM start -->
+        <article class="promo-block" data-ui-component="promo-block">
+            <span class="[ promo-block__ico  ico-dealer ]"></span>
+            <h3 class="promo-block__title">Сеть филиалов и диллеров по России</h3>
+            <p class="promo-block__description">Филиалы: Санкт-Петербург, Москва, Ростов-на-Дону, Екатеринбург, Новосибирск, Омск, Уфа, Волгоград, Иркутск, Красноярск, Братск, Чита, Улан-Удэ, Ангарск. Диллеры Архангельск, Северодвинск, Сургут, Казань, Самара, Тольятти, Пермь, Сочи</p>
+        </article><!-- .promo-block -->
+        <!-- PROMO ITEM end -->
+
+        <!-- PROMO ITEM start -->
+        <article class="promo-block" data-ui-component="promo-block">
+            <span class="[ promo-block__ico  ico-delivery ]"></span>
+            <h3 class="promo-block__title">Доставка по всей России</h3>
+            <p class="promo-block__description">Собственный логистический центр.</p>
+            <p class="promo-block__description">Собственный автопарк – 17 грузовых автомобилей.</p>
+            <p class="promo-block__description">Сотрудничество с крупнейшими транспортными компаниями.</p>
+        </article><!-- .promo-block -->
+        <!-- PROMO ITEM end -->
+
+        <!-- PROMO ITEM start -->
+        <article class="promo-block" data-ui-component="promo-block">
+            <span class="[ promo-block__ico  ico-store ]"></span>
+            <h3 class="promo-block__title">10000 м2 складских помещений</h3>
+            <p class="promo-block__description">Большие складские комплексы общей площадью 10000 м2 расположены в крупнейших городах России.</p>
+        </article><!-- .promo-block -->
+        <!-- PROMO ITEM end -->
+
+    </div><!-- .container -->
+</section><!-- .content-slide -->
+<!-- PROMO end -->
+
+
+<!-- FEEDBACK start -->
+<section class="content-slide" data-ui-component="content-slide-block">
+    <div class="container">
+
+        <h2 class="content-slide__title" id="feedback">Отзывы</h2>
+
+        <section class="feedback-slider" data-ui-component="feedback-slider">
+            <div class="flexslider" id="flexslider">
+                <ul class="slides">
+                    <li>
+                        <h4 class="feedback-slider__title">РА &laquo;Валмакс&raquo;, г. Сочи</h4>
+                        <p class="feedback-slider__text">Начинали мы с оборудования Maxima PZ, но вскоре объемы значительно выросли и нам понадобилась новая, более производительная машина. Сомнений в выборе нового поставщика не было: &laquo;ФорДА&raquo;. В итоге, остановили свой выбор на Maxima INNO. Полностью довольны, как оборудованием, так и сервисом.</p>
+                    </li>
+                    <li>
+                        <h4 class="feedback-slider__title">РА &laquo;Хамелеон&raquo;, г. Екатеринбург</h4>
+                        <p class="feedback-slider__text">Приобрели широкоформатный принтер Maxima в 2012 году. Довольны, как самим аппаратом, который оказался надежным и качественным, так и подходом компании &laquo;ФорДА&raquo; к обслуживанию и сервису.</p>
+                    </li>
+                    <li>
+                        <h4 class="feedback-slider__title">&laquo;Румитекс&raquo;, г. Екатеринбург</h4>
+                        <p class="feedback-slider__text">В 2014 году мы приобрели у &laquo;Форды&raquo; планшетный принтер Viktor KJ. Нам необходимо было печатать на твердых поверхностях и данное оборудование стало оптимальным выбором для нас с точки зрения цены и качества. К сервису компании &laquo;ФорДА&raquo; у нас также нет никаких нареканий.</p>
+                    </li>
+                    <li>
+                        <h4 class="feedback-slider__title">РПФ &laquo;Флорекс&raquo;</h4>
+                        <p class="feedback-slider__text">Количество установленных у нас принтеров Maxima от компании &laquo;Форды&raquo; говорит само за себя: 4 штуки! Оптимальный выбор для тех, кому необходима производительное оборудование с достойным качеством печати.</p>
+                    </li>
+                </ul>
+            </div>
+            <div class="custom-navigation">
+                <a href="index.html#" class="flex-prev">&#9664;</a>
+                <div class="custom-controls-container"></div>
+                <a href="index.html#" class="flex-next">&#9654;</a>
+            </div><!-- .flexslider -->
+        </section><!-- .feedback-slider -->
+    </div><!-- .container -->
+</section><!-- .content-slide -->
+<!-- FEEDBACK end -->
+
+
+<!-- SITE FOOTER start -->
+<footer class="site-footer" data-ui-component="site-footer">
+    <div class="container  clear-group">
+
+        <section class="contact-form" data-ui-component="header-contact-form">
+
+            <div class="site-footer__section">
+                <article class="contact-form__promo">
+                    <h2>Получите 5&#37; скидки</h2>
+                    <h3>на оборудование и комплектующие</h3>
+                </article>
+            </div><!-- .site-footer__section -->
+
+            <div class="site-footer__section">
+                <form class="contact-form__form" method="post">
+                    <div class="contact-form__field">
+                        <label class="contact-form__label" for="name">Напишите имя, как к Вам обращаться</label>
+                        <input class="contact-form__input" type="text" name="name" autocomplete="off" pattern="[а-яА-Яa-zA-Z'\s]{3,100}" required placeholder="Иванов Иван" oninvalid="setCustomValidity('Допускается кириллица и латиница в количестве от 3 до 100 символов')" onchange="setCustomValidity('')"/>
+                    </div><!-- .contact-form__field -->
+                    <div class="contact-form__field">
+                        <label class="contact-form__label" for="phoe">Напишите телефон, Вам позвонит менеджер</label>
+                        <input class="contact-form__input" type="text" name="phone" autocomplete="off" pattern="[0-9+-\s()]{7,20}" required placeholder="+7 (812) 380-85-55" oninvalid="setCustomValidity('Допускаются цифры, пробелы, круглые скобки и знаки сложения и вычитания в количестве от 7 до 20 символов')" onchange="setCustomValidity('')"/>
+                    </div><!-- .contact-form__field -->
+                    <div class="contact-form__field">
+                        <button class="contact-form__btn" type="submit">Получить 5&#37; скидку</button>
+                        <p class="contact-form__message-success" hidden>Ваша скидка уже в пути!</p>
+                        <p class="contact-form__message-failure" hidden>Упс..возникла проблемка :(</p>
+                    </div><!-- .contact-form__field -->
+                </form><!-- .contact-form__form -->
+            </div><!-- .site-footer__section -->
+
+        </section><!-- .contact-form -->
+
+    </div><!-- .container -->
+</footer><!-- .site-footer -->
+<!-- SITE FOOTER start -->
+
+<script src="js/vendor/jquery-1.11.1.min.js"></script>
+<script src="js/plugins/flexslider/jquery.flexslider-min.js"></script>
+<script src="js/plugins/smoothscroll/smooth-scroll.min.js"></script>
+<script src="js/main.js"></script>
+
+</body>
+</html>
