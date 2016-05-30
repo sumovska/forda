@@ -1,0 +1,28 @@
+/* COMPONENT:
+   ==========================================================================
+   Tabs
+   ========================================================================== */
+.tab-nav {
+  margin-bottom: 38px;
+  font-size: 16px;
+  border-bottom: 1px solid #403f3f;
+}
+.tab-nav li {
+  display: inline-block;
+}
+.tab-nav li a {
+  padding: 13px 15px;
+  display: block;
+  color: #403f3f;
+  text-decoration: none;
+}
+.tab-nav li:first-child a {
+  padding-left: 0;
+}
+.tab-nav li.active a {
+  color: #e12686
+}
+/* SUB-SECTION:
+   --------------------------------------------
+   Breadcrumbs: responsive
+   -------------------------------------------- */

@@ -12,7 +12,7 @@
   letter-spacing: .026em;
 }
 .page-product .product-item {
-  margin: 50px 0;
+  margin: 50px 0 42px;
 }
 .page-product .product-item:after { display: table; content: '\0020'; clear: both; }
 .page-product .picture {
