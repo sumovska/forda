@@ -4,11 +4,9 @@
    ========================================================================== */
 .product {
     position: relative;
-
     float: left;
     margin-bottom: 40px;
     padding: 20px;
-
     width: 50%;
 }
 

@@ -27,6 +27,9 @@ footer: #e12385;
 	max-width: 1170px;
 	width: 96%;
 }
+.container.container-narrow {
+  max-width: 785px;
+}
 
 
 .bg-blue   { background-color: hsl(198,77%,51%); }
@@ -54,13 +57,21 @@ body {
 /* ==========================================================================
    STYLES: fonts
    ========================================================================== */
+/* Gost */
 @font-face {
    font-family: 'GOST';
    src: url('../fonts/GOST_B_0.ttf') format('truetype');
    font-weight: normal;
    font-style: normal;
 }
-
+/* Trebuchet MS */
+@font-face {
+  font-family: 'Trebuchet MS';
+  src: url('../fonts/trebuchetms-webfont.eot');
+  src: local('☺'), url('../fonts/trebuchetms-webfont.woff') format('woff'), url('../fonts/trebuchetms-webfont.ttf') format('truetype'), url('../fonts/trebuchetms-webfont.svg') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
 
 /* ==========================================================================
    STYLES: sprites

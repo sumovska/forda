@@ -1,0 +1,129 @@
+/* COMPONENT:
+   ==========================================================================
+   Inner Header
+   ========================================================================== */
+.inner-header {
+  height: 114px;
+  background: rgb(107, 26, 64);
+  background: -moz-linear-gradient(top, rgba(107, 26, 64, 1) 0%, rgba(126, 19, 73, 1) 100%);
+  background: -webkit-linear-gradient(top, rgba(107, 26, 64, 1) 0%, rgba(126, 19, 73, 1) 100%);
+  background: linear-gradient(to bottom, rgba(107, 26, 64, 1) 0%, rgba(126, 19, 73, 1) 100%);
+}
+.inner-header .container {
+  height: 100%;
+  position: relative;
+}
+.inner-header .logo {
+  width: 154px;
+  height: 40px;
+  margin: 0;
+  position: absolute;
+  top: 29px;
+  left: 0;
+}
+.inner-header .logo a {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+.inner-header .logo img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+.inner-header .search {
+  position: absolute;
+  top: 66px;
+  left: 208px;
+}
+.inner-header .search input {
+  width: 370px;
+  height: 20px;
+  padding: 2px 28px 2px 8px;
+  font: 12px/12px 'Trebuchet MS', Tahoma, sans-serif;
+  border: none;
+  background: rgba(255, 255, 255, .41);
+  border-radius: 3px;
+  color: #fff;
+  outline: none !important;
+  transition: background .2s ease;
+}
+.inner-header .search input:focus {background: rgba(255, 255, 255, .5);}
+.inner-header .search input::-webkit-input-placeholder { color: rgba(255, 255, 255, .6); }
+.inner-header .search input::-moz-placeholder { color: rgba(255, 255, 255, .6); }
+.inner-header .search input:-ms-input-placeholder { color: rgba(255, 255, 255, .6); }
+.inner-header .search input:-moz-placeholder { color: rgba(255, 255, 255, .6); }
+.inner-header .search button {
+  width: 28px;
+  border: none;
+  background: transparent url("../../img/ico/search.png") center center no-repeat;
+  background-size: 14px 14px;
+  outline: none !important;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+}
+.inner-header .tel {
+  font: 14px/18px 'Trebuchet MS', Tahoma, sans-serif;
+  color: rgba(255, 255, 255, .6);
+  text-decoration: none;
+  cursor: text;
+  position: absolute;
+  right: -1px;
+  top: 66px;
+}
+.nav {
+  position: absolute;
+  right: -3px;
+  top: 26px;
+}
+.nav ul {
+  margin: 0 -7px;
+  font: 13px/18px 'Trebuchet MS', Tahoma, sans-serif;
+  display: flex;
+}
+.nav ul li {
+  margin: 0 7px;
+}
+.nav ul li a {
+  color: rgba(255, 255, 255, .6);
+}
+.nav ul li a:hover {
+  text-decoration: none;
+}
+.nav ul li.active {
+  margin-right: -5px;
+}
+.nav ul li.active a {
+  padding: 6px 12px;
+  background: #fff;
+  border-radius: 3px;
+  color: #000;
+  text-decoration: none;
+}
+/* SUB-SECTION:
+   --------------------------------------------
+   Inner Header: responsive
+   -------------------------------------------- */
+@media screen and (max-width: 1400px) {
+
+}
+@media screen and (max-width: 1024px) {
+
+}
+@media (max-width: 989px) {
+  .nav ul li { margin-left: 4px; margin-right: 4px;}
+  .nav ul li.active { margin-right: -2px;}
+}
+@media (max-width: 767px) {
+  .inner-header { height: 66px; }
+  .inner-header .logo { top: 13px; }
+  .inner-header .tel { top: 10px; }
+  .inner-header .search { top: 36px; left: auto; right: 0; }
+  .inner-header .search input { width: auto; }
+  .nav { display: none; }
+}
+@media (max-width: 568px) {
+  .inner-header .logo { width: 120px; height: 32px; top: 17px; }
+}
