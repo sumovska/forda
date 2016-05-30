@@ -54,4 +54,27 @@ $(function() {
         }
         $(element).animate({'top': '100%', 'opacity': '100%'}, 100);
     }
+
+	/** Product carousel */
+	$('.page-product').each(function () {
+		$('.product-item', this).each(function () {
+			var fo = $('.slider-for', this), nav = $('.slider-nav', this);
+			fo.slick({
+				slidesToShow: 1,
+				slidesToScroll: 1,
+				arrows: false,
+				fade: true,
+				asNavFor: nav
+			});
+			nav.slick({
+				slidesToShow: 3,
+				slidesToScroll: 1,
+				asNavFor: fo,
+				dots: false,
+				focusOnSelect: true,
+				prevArrow: '<span class="slick-prev"></span>',
+				nextArrow: '<span class="slick-next"></span>'
+			});
+		});
+	});
 });

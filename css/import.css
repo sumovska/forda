@@ -21,6 +21,9 @@
 /* STYLES:; */
 @import url('style.css');
 
+/* FORMS:; */
+@import url('forms.css');
+
 /* COMPONENTS: */
 @import url('components/site-header.css');
 @import url('components/header-nav.css');
@@ -34,6 +37,7 @@
 @import url('components/site-footer.css');
 @import url('components/inner-header.css');
 @import url('components/breadcrumbs.css');
+@import url('components/page-product.css');
 
 /* PLUGINS: */
 @import url('plugins/flexslider/flexslider.css');

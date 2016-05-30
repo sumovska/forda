@@ -1,0 +1,14 @@
+/* ==========================================================================
+   Forms
+   ========================================================================== */
+.button, button.button {
+  min-width: 196px;
+  padding: 13px 26px;
+  display: inline-block;
+  background: #e12686;
+  border-radius: 3px;
+  font: 12px/12px 'GOST', Arial, sans-serif;
+  text-decoration: none;
+  color: #fff;
+  text-align: center;
+}

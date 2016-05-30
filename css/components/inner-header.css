@@ -40,7 +40,8 @@
   width: 370px;
   height: 20px;
   padding: 2px 28px 2px 8px;
-  font: 12px/12px 'Trebuchet MS', Tahoma, sans-serif;
+  font-size: 12px;
+  line-height: 12px;
   border: none;
   background: rgba(255, 255, 255, .41);
   border-radius: 3px;
@@ -65,7 +66,8 @@
   bottom: 0;
 }
 .inner-header .tel {
-  font: 14px/18px 'Trebuchet MS', Tahoma, sans-serif;
+  font-size: 14px;
+  line-height: 18px;
   color: rgba(255, 255, 255, .6);
   text-decoration: none;
   cursor: text;
@@ -80,7 +82,8 @@
 }
 .nav ul {
   margin: 0 -7px;
-  font: 13px/18px 'Trebuchet MS', Tahoma, sans-serif;
+  font-size: 13px;
+  line-height: 18px;
   display: flex;
 }
 .nav ul li {
