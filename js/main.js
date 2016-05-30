@@ -78,14 +78,13 @@ $(function() {
 		});
 	});
 
-	/** Featured carousel */
-	/*$('.featured').each(function () {
-		$('.list', this).slick({
-			slidesToShow: 4,
-			slidesToScroll: 4,
-			dots: false,
-			prevArrow: '<span class="slick-prev"></span>',
-			nextArrow: '<span class="slick-next"></span>'
+	/** Tabs */
+	$('.tab-nav').each(function () {
+		$('a', this).click(function () {
+			var where = $(this).attr("href").replace(/^.*#(.*)/, "$1");
+			$(this).closest('li').addClass('active').siblings('li.active').removeClass('active');
+			$('#' + where).addClass('tab-active').siblings('.tab-panel').removeClass('tab-active');
+			return false;
 		});
-	});*/
+	});
 });

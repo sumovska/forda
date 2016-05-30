@@ -26,6 +26,11 @@
   margin-bottom: 60px;
   padding-bottom: 32px;
   border-bottom: 1px solid #403f3f;
+
+}
+.tab-panel {display: none;}
+.tab-panel.tab-active {
+  display: block;
 }
 /* SUB-SECTION:
    --------------------------------------------
