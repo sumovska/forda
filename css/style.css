@@ -30,6 +30,9 @@ footer: #e12385;
 .container.container-narrow {
   max-width: 785px;
 }
+.main {
+  padding-top: 17px;
+}
 
 
 .bg-blue   { background-color: hsl(198,77%,51%); }
