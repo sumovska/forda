@@ -112,6 +112,69 @@
 .page-product .product-card .more:hover {
   text-decoration: none;
 }
+.page-product .describe {
+  max-width: 76%;
+}
+.page-product .table-responsive {
+  max-width: 100%;overflow-x: scroll;
+}
+.page-product .table-price {
+  width: 100%;
+  min-width: 600px;
+  margin: 54px 0;
+  text-align: center;
+  table-layout: fixed;
+}
+.page-product .table-price thead th {
+  padding: 52px 10px 12px;
+  border: 1px solid #dfe0df;
+}
+.page-product .table-price thead th:not(:first-of-type) {
+  background: #eeeef1;
+}
+.page-product .table-price tbody td {
+  padding: 12px 10px;
+  border: 1px solid #dfe0df;
+}
+.page-product .table-price tbody td:first-of-type {
+  background: #eeeef1;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+.page-product .featured {
+  margin: 82px 0 0 0;
+  padding: 0;
+  list-style: none;
+  text-align: center;
+}
+.page-product .featured .title {
+  margin-bottom: 50px;
+  font: normal 36px/60px 'Trebuchet MS', Arial, sans-serif;
+  text-transform: uppercase;
+}
+.page-product .featured .list:after { display: table; content: '\0020'; clear: both; }
+.page-product .featured li {
+  width: 25%;
+  margin: 0;
+  min-height: 242px;
+  float: left;
+  border: 1px solid #e5e6e5;
+}
+.page-product .featured li a {
+  height: 100%;
+  display: block;
+  width: 100%;
+  padding: 12px 34px;
+  color: #403f3f;
+  text-decoration: none;
+}
+.page-product .featured li img {
+  width: 150px;
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
 /* SUB-SECTION:
    --------------------------------------------
    Page Product: responsive
@@ -123,6 +186,8 @@
   .page-product .picture { width: 43%; }
   .page-product .product-card { width: 57%; padding-left: 20px; }
   .page-product .product-card .title { margin-bottom: 25px; }
+  .page-product .featured { display: none;}
+  .page-product .table-price {    margin: 24px 0;}
 }
 @media (max-width: 767px) {
   .page-product .heading {margin: 10px 0; font-size: 26px; line-height: 40px;}

@@ -36,9 +36,11 @@
 @import url('components/feedback-slider.css');
 @import url('components/site-footer.css');
 @import url('components/inner-header.css');
+@import url('components/inner-footer.css');
 @import url('components/breadcrumbs.css');
 @import url('components/page-product.css');
 @import url('components/tabs.css');
+@import url('components/default.css');
 
 /* PLUGINS: */
 @import url('plugins/flexslider/flexslider.css');

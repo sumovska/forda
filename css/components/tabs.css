@@ -3,7 +3,7 @@
    Tabs
    ========================================================================== */
 .tab-nav {
-  margin-bottom: 38px;
+  margin-bottom: 32px;
   font-size: 16px;
   border-bottom: 1px solid #403f3f;
 }
@@ -22,7 +22,17 @@
 .tab-nav li.active a {
   color: #e12686
 }
+.tab-content {
+  margin-bottom: 60px;
+  padding-bottom: 32px;
+  border-bottom: 1px solid #403f3f;
+}
 /* SUB-SECTION:
    --------------------------------------------
    Breadcrumbs: responsive
    -------------------------------------------- */
+@media (max-width: 1024px) {
+  .tab-content {
+    margin-bottom: 20px;
+  }
+}

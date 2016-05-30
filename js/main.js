@@ -77,4 +77,15 @@ $(function() {
 			});
 		});
 	});
+
+	/** Featured carousel */
+	/*$('.featured').each(function () {
+		$('.list', this).slick({
+			slidesToShow: 4,
+			slidesToScroll: 4,
+			dots: false,
+			prevArrow: '<span class="slick-prev"></span>',
+			nextArrow: '<span class="slick-next"></span>'
+		});
+	});*/
 });
