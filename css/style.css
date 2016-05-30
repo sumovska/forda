@@ -52,6 +52,7 @@ footer: #e12385;
 }
 
 body {
+   min-width: 320px;
    font-family: 'GOST', Arial, sans-serif;
    font-size: 100%;
 }

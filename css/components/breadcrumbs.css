@@ -15,18 +15,15 @@
   display: inline-block;
   vertical-align: top;
 }
-.breadcrumbs li:before {
-  margin: 0 4px 0 4px;
+.breadcrumbs li:after {
+  margin: 0 0 0 6px;
   content: "/";
   display: inline-block;
   vertical-align: top;
   color: #000;
 }
-.breadcrumbs li:first-child:before { display: none; }
-.breadcrumbs li:last-child:before {
-  margin: 0 4px 0 0;
-  color: #808080;
-}
+.breadcrumbs li:nth-last-child(2):after { color: #808080; }
+.breadcrumbs li:last-child:after { display: none; }
 .breadcrumbs li a {
   color: #000;
   text-decoration: none;

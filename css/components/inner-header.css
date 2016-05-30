@@ -123,7 +123,7 @@
   .inner-header { height: 66px; }
   .inner-header .logo { top: 13px; }
   .inner-header .tel { top: 10px; }
-  .inner-header .search { top: 36px; left: auto; right: 0; }
+  .inner-header .search { top: 34px; left: auto; right: 0; }
   .inner-header .search input { width: auto; }
   .nav { display: none; }
 }

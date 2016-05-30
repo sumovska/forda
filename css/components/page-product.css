@@ -27,13 +27,23 @@
 .page-product .picture .slider-for li {
   border: 1px solid #ddd;
 }
+.page-product .picture .slider-for li img {
+  width: 100%;
+  height: auto;
+}
 .page-product .picture .slider-nav {
   margin: 0 -7px;
   padding-bottom: 40px;
 }
 .page-product .picture .slider-nav li {
+  width: 33.3%;
   padding: 0 7px;
+  float: left;
   outline: none;
+}
+.page-product .picture .slider-nav li img {
+  width: 100%;
+  height: auto;
 }
 .page-product .picture .slider-nav.slick-initialized .slick-arrow {
   width: 12px;
@@ -106,9 +116,29 @@
    --------------------------------------------
    Page Product: responsive
    -------------------------------------------- */
-@media (max-width: 989px) {
+@media (max-width: 1024px) {
+  .page-product .heading {margin: 24px 0; }
+}
+@media (max-width: 998px) {
+  .page-product .picture { width: 43%; }
+  .page-product .product-card { width: 57%; padding-left: 20px; }
+  .page-product .product-card .title { margin-bottom: 25px; }
 }
 @media (max-width: 767px) {
+  .page-product .heading {margin: 10px 0; font-size: 26px; line-height: 40px;}
+  .page-product .product-item { margin: 30px 0; }
+  .page-product .picture .slider-nav { margin-left: -2px; margin-right: -2px;}
+  .page-product .picture .slider-nav li { padding-left: 2px; padding-right: 2px; }
+  .page-product .picture .slider-nav.slick-initialized .slick-arrow.slick-next { right: 15px; }
+  .page-product .picture .slider-nav.slick-initialized .slick-arrow.slick-prev { right: 37px; }
+  .page-product .product-card .title { margin-bottom: 15px; }
+  .page-product .product-card .list dt { flex: 1 45%; }
+  .page-product .product-card .list dd { flex: 1 55%; }
 }
-@media (max-width: 568px) {
+@media (max-width: 666px) {
+  .page-product .heading { font-size: 26px; line-height: 40px;}
+  .page-product .product-item { margin: 20px 0; }
+  .page-product .picture { width: 100%; max-width: 400px; margin-left: auto; margin-right: auto; margin-bottom: 20px; float: none; }
+  .page-product .product-card { width: 100%; float: none; padding-left: 0; }
+  .page-product .product-card .title { margin-top: 0;margin-bottom: 25px;  }
 }

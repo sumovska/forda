@@ -11,4 +11,8 @@
   text-decoration: none;
   color: #fff;
   text-align: center;
+  transition: background-color .2s ease;
+}
+.button:hover, button.button:hover, .button:focus, button.button:focus {
+  background-color: #f42a92;
 }
