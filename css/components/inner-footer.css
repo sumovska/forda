@@ -61,13 +61,6 @@
    --------------------------------------------
    Inner Footer: responsive
    -------------------------------------------- */
-@media screen and (max-width: 1400px) {
-
-}
-@media screen and (max-width: 1024px) {
-}
-@media (max-width: 989px) {
-}
 @media (max-width: 767px) {
   .inner-footer { height: auto; padding: 20px 0;}
   .inner-footer .logo { margin: 0 auto 20px; position: relative; left: auto; top: auto; }
