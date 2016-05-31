@@ -40,7 +40,7 @@
 @import url('components/breadcrumbs.css');
 @import url('components/page-product.css');
 @import url('components/tabs.css');
-@import url('components/default.css');
+@import url('components/popup.css');
 
 /* PLUGINS: */
 @import url('plugins/flexslider/flexslider.css');

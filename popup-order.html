@@ -1,0 +1,21 @@
+<div id="popup-order" class="popup">
+	<form class="contact-form__form" method="post">
+		<div class="contact-form__field">
+			<label class="contact-form__label" for="name">Напишите имя, как к Вам обращаться</label>
+			<input class="contact-form__input" type="text" id="name" autocomplete="off" pattern="[а-яА-Яa-zA-Z'\s]{3,100}" required placeholder="Иванов Иван" oninvalid="setCustomValidity('Допускается кириллица и латиница в количестве от 3 до 100 символов')" onchange="setCustomValidity('')"/>
+		</div>
+		<!-- .contact-form__field -->
+		<div class="contact-form__field">
+			<label class="contact-form__label" for="phone">Напишите телефон, Вам позвонит менеджер</label>
+			<input class="contact-form__input" type="text" id="phone" autocomplete="off" pattern="[0-9+-\s()]{7,20}" required placeholder="+7 (812) 380-85-55" oninvalid="setCustomValidity('Допускаются цифры, пробелы, круглые скобки и знаки сложения и вычитания в количестве от 7 до 20 символов')" onchange="setCustomValidity('')"/>
+		</div>
+		<!-- .contact-form__field -->
+		<div class="contact-form__field">
+			<button class="contact-form__btn" type="submit">Получить 5&#37; скидку</button>
+			<p class="contact-form__message-success" hidden>Ваша скидка уже в пути!</p>
+			<p class="contact-form__message-failure" hidden>Упс..возникла проблемка :(</p>
+		</div>
+		<!-- .contact-form__field -->
+	</form>
+	<!-- .contact-form__form -->
+</div>

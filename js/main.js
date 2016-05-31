@@ -87,4 +87,29 @@ $(function() {
 			return false;
 		});
 	});
+
+	/*** Ajax popup ***/
+	$('.js-popup').magnificPopup({
+		type: 'ajax'
+	});
+});
+
+/**
+ * Magnific Popup default settings
+ */
+$.extend(true, $.magnificPopup.defaults, {
+	tClose: 'Закрыть (Esc)',
+	tLoading: '',
+	closeMarkup: '<div title="%title%" class="mfp-close">&times;</div>',
+	ajax: {tError: '<a href="%url%">Контент</a> не найден.'},
+	settings: {cache: false},
+	mainClass: 'mfp-zoom-in',
+	midClick: true,
+	removalDelay: 300,
+	autoFocusLast: false,
+	preload: false,
+	callbacks: {
+		ajaxContentAdded: function () {
+		}
+	}
 });

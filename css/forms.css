@@ -9,6 +9,7 @@
   border-radius: 3px;
   font: 12px/12px 'GOST', Arial, sans-serif;
   text-decoration: none;
+  outline: none !important;
   color: #fff;
   text-align: center;
   transition: background-color .2s ease;

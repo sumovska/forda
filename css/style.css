@@ -55,6 +55,7 @@ body {
 }
 .page-inner {
   font: 14px/24px 'Trebuchet MS', Arial, sans-serif;
+  overflow-x: hidden;
 }
 /* ==========================================================================
    STYLES: fonts

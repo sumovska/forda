@@ -7,8 +7,9 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 
 	<title>Forda Print</title>
-	<link rel="stylesheet" href="css/import.css">
 	<link rel="stylesheet" href="css/plugins/slick-carousel/slick.css">
+	<link rel="stylesheet" href="css/plugins/magnific-popup/magnific-popup.css">
+	<link rel="stylesheet" href="css/import.css">
 
 	<!--[if lt IE 9]>
 	<link rel="stylesheet" href="css/ie.css">
@@ -32,31 +33,32 @@
 			</div>
 			<nav class="nav">
 				<ul>
-					<li class="active"><a href="#">Каталог</a></li>
-					<li><a href="#">Покупателям</a></li>
-					<li><a href="#">Блог для профеccионалов</a></li>
-					<li><a href="#">Акции</a></li>
-					<li><a href="#">Новости</a></li>
-					<li><a href="#">О компании</a></li>
-					<li><a href="#">Контакты</a></li>
+					<li><a href="index.html#about">О нас</a></li>
+					<li><a href="index.html#feedback">Отзывы</a></li>
 				</ul>
 			</nav>
 		</div>
 	</header>
 
-
+	<!-- Main -->
 	<main class="main">
 		<article>
 			<div class="container container-narrow">
+
+				<!-- Breadcrumbs -->
 				<ul class="breadcrumbs">
 					<li><a href="#">Каталог</a></li>
-					<li><a href="#">Чернила</a></li>
 					<li>Широкоформатный принтер Maxima GT2</li>
 				</ul>
+				<!-- /Breadcrumbs -->
+
+				<!-- Page-product -->
 				<div class="page-product">
 					<h1 class="heading">Широкоформатный принтер Maxima GT2 <br><span class="color">от 700 300 руб/шт</span></h1>
-					<a class="button" href="#">Заказать</a>
-					<div class="product-item">
+					<a class="button js-popup" href="popup-order.html">Заказать</a>
+
+					<!-- Product-item -->
+					<section class="product-item">
 						<div class="picture">
 							<ul class="slider-for">
 								<li><img src="img/slider/product-1.jpg" width="390" height="274" alt=""></li>
@@ -91,19 +93,21 @@
 							</dl>
 							<a class="more" href="#">Все характеристики</a>
 						</div>
-					</div>
+					</section>
+					<!-- /Product-item -->
 
 					<!-- Nav tabs -->
 					<ul class="tab-nav">
 						<li class="active"><a href="#describe">Описание</a></li>
 						<li><a href="#characteristics">Характеристики</a></li>
 					</ul>
+					<!-- /Nav tabs -->
 
-					<!-- Tab panes -->
+					<!-- Tab content -->
 					<div class="tab-content">
 						<div class="tab-panel tab-active" id="describe">
-							<article class="describe default">
-								<h6>Широкоформатный принтер Maxima GT2</h6>
+							<div class="describe">
+								<p class="upper">Широкоформатный принтер Maxima GT2</p>
 								<p>Широкоформатные лайт-сольвентные принтеры серий MAXIMA GT-2 (4/8 печатающих головок) - обновленная модель принтера Maxima PZ.
 									<br>Улучшенные характеристики. Интерьерное качество печати при ширине 3 метра! Широкоформатные принтеры MAXIMA на самом деле являются универсальным решением как для новичков, так и для профессионалов на рынке широкоформатной печати. Принтер широких форматов MAXIMA одинаково успешно печатает интерьерную, автомобильную и уличную графику. Принтеры MAXIMA отличает высокая скорость и интерьерное качество печати.
 								</p>
@@ -121,7 +125,7 @@
 									<li>РИП: PhotoPrint 11</li>
 									<li>Максимальная ширина печати: 320 см</li>
 								</ul>
-							</article>
+							</div>
 						</div>
 						<div class="tab-panel" id="characteristics">
 							<div class="default">
@@ -142,7 +146,9 @@
 							</div>
 						</div>
 					</div>
+					<!-- /Tab content -->
 
+					<!-- Table-price -->
 					<div class="table-responsive">
 						<table class="table-price">
 						<thead>
@@ -181,46 +187,122 @@
 						</tbody>
 						</table>
 					</div>
+					<!-- /Table-price -->
 
-					<p class="text-center"><a class="button" href="#">Заказать</a></p>
+					<p class="text-center"><a class="button js-popup" href="popup-order.html">Заказать</a></p>
 
-					<div class="featured">
-						<h2 class="title">Сопутствующие товары</h2>
-						<ul class="list">
-							<li><a href="#"><img src="img/featured/1.jpg" width="150" height="150" alt=""> Сублимационные чернила</a></li>
-							<li><a href="#"><img src="img/featured/1.jpg" width="150" height="150" alt=""> Сольвентные чернила</a></li>
-							<li><a href="#"><img src="img/featured/2.jpg" width="150" height="150" alt=""> УФ-чернила</a></li>
-							<li><a href="#"><img src="img/featured/3.jpg" width="150" height="150" alt=""> Чернила на водной основе</a></li>
-						</ul>
-					</div>
+					<!-- Catalog block -->
+					<aside class="catalog  clear-group" data-ui-component="catalog">
+						<div class="catalog-space">
+							<h2 class="content-slide__title" >Сопутствующие товары</h2>
+							<div class="catalog__container">
 
+								<!-- Product -->
+								<article class="product">
+									<header class="product__header">
+										<figure class="product__image">
+											<img src="img/content/catalog_inc_1.png" alt="УФ-чернила">
+											<span class="[ product__image-art  product__image-art--520 ]"></span>
+										</figure>
+										<h3 class="product__title">УФ-чернила</h3>
+										<span class="product__title-detail">BSK Triangle</span>
+									</header>
+									<p class="product__description">УФ-отверждаемые на акрилатной основе</p>
+									<p class="product__description">Для печатающих головок от 6-40пл</p>
+									<p class="product__description">Konica Minolta&reg;, Ricoh&reg;, ToshibaTEC&reg;, Dimatix&reg;</p>
+									<p class="product__description">Насыщенный красный цвет</p>
+									<p class="product__description">Не трескаются при резке и фрезеровке</p>
+									<p class="product__description">Высокая устойчивость к внешним факторам</p>
+									<p class="product__description">Высокая скорость печати</p>
+									<p class="product__description">Мгновенная скорость высыхания</p>
+								</article>
+								<!-- /Product -->
+
+								<!-- Product -->
+								<article class="product">
+									<header class="product__header">
+										<figure class="product__image">
+											<img src="img/content/catalog_inc_2.png" alt="ЛАЙТ-сольвентные чернила">
+											<span class="[ product__image-art  product__image-art--900 ]"></span>
+										</figure>
+										<h3 class="product__title">ЛАЙТ-сольвентные чернила</h3>
+										<span class="product__title-detail">PDQ/PNX Triangle</span>
+									</header>
+									<p class="product__description">Сольвентные чернила</p>
+									<p class="product__description">Для печатающих головок</p>
+									<p class="product__description">от 9-25 пл / 15-35 пл</p>
+									<p class="product__description">Материалы для печати: баннерные ткани, винил, самоклеющиеся пленки, сетка, скроллерная бумага</p>
+									<p class="product__description">Не содержат Циклогексанон (С6Н10О)</p>
+								</article>
+								<!-- /Product -->
+
+							</div>
+							<div class="catalog__container">
+
+								<!-- Product -->
+								<article class="product">
+									<header class="product__header">
+										<figure class="product__image">
+											<img src="img/content/catalog_inc_3.png" alt="Жесткий сольвент">
+											<span class="[ product__image-art  product__image-art--520 ]"></span>
+										</figure>
+										<h3 class="product__title">Жесткий сольвент</h3>
+										<span class="product__title-detail">SGD Triangle</span>
+									</header>
+									<p class="product__description">Сольвентные чернила</p>
+									<p class="product__description">Для печатающих головок от 14-42 пл</p>
+									<p class="product__description">Материалы для печати: баннерные ткани, винил, самоклеющиеся пленки, сетка, скроллерная бумага</p>
+									<p class="product__description">Минимальным содержанием вредных компонентов</p>
+								</article>
+								<!-- /Product -->
+
+								<!-- Product -->
+								<article class="product">
+									<header class="product__header">
+										<figure class="product__image">
+											<img src="img/content/catalog_inc_4.png" alt="ЭКО-сольвентные чернила">
+											<span class="product__image-art"></span>
+										</figure>
+										<h3 class="product__title">ЭКО-сольвентные чернила</h3>
+										<span class="product__title-detail">Inkrang ES</span>
+									</header>
+									<p class="product__description">Совместимы с экосольвентными, сольвентными принтерами</p>
+									<p class="product__description">Для печатающих головок EPSON «DX»: Roland, Mutoh, Mimaki, Optimum Digital и др.</p>
+									<p class="product__description">Отсутствие вредных хим. компонентов.</p>
+									<p class="product__description">Практически полное отсутствие запаха.</p>
+									<p class="product__description">6 основных цветов (CMYKLcLm)</p>
+								</article>
+								<!-- /Product -->
+							</div>
+						</div>
+					</aside>
+					<!-- /Catalog block -->
 				</div>
+				<!-- /Page-product -->
 			</div>
 		</article>
 	</main>
+	<!-- /Main -->
 
+	<!-- Inner-footer -->
 	<footer class="inner-footer">
 		<div class="container container-narrow">
 			<p class="logo"><a href="index.html"><img src="img/logo-inner.png" width="154" height="40" alt="Forda Print"></a></p>
 			<a class="tel" href="tel:+7(812)-380-85-55">+7 (812) 380 85 55</a>
 			<ul class="links">
-				<li><a href="#">Каталог</a></li>
-				<li><a href="#">Покупателям</a></li>
-				<li><a href="#">Блог для профеccионалов</a></li>
-				<li><a href="#">Акции</a></li>
-				<li><a href="#">Новости</a></li>
-				<li><a href="#">О компании</a></li>
-				<li><a href="#">Контакты</a></li>
+				<li><a href="index.html#about">О нас</a></li>
+				<li><a href="index.html#feedback">Отзывы</a></li>
 			</ul>
 		</div>
 	</footer>
-
+	<!-- /Inner-footer -->
 
 	<script src="js/vendor/jquery-1.11.1.min.js"></script>
-	<script src="js/main.js"></script>
 	<script src="js/plugins/slick-carousel/slick.min.js"></script>
 	<script src="js/plugins/flexslider/jquery.flexslider-min.js"></script>
 	<script src="js/plugins/smoothscroll/smooth-scroll.min.js"></script>
+	<script src="js/plugins/magnific-popup/jquery.magnific-popup.min.js"></script>
+	<script src="js/main.js"></script>
 
 </body>
 </html>

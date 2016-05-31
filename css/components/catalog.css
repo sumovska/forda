@@ -19,6 +19,21 @@
 
 	width: 50%;
 }
+.container-narrow .catalog {
+  margin-left: -50vw;
+  margin-right: -50vw;
+}
+.container-narrow .catalog .catalog-space {
+  width: 100vw;
+  margin: 0 auto;
+  padding: 0 4vw;
+}
+.container-narrow .catalog .catalog-space:after {
+  display: table;
+  content: '\0020';
+  clear: both;
+}
+
 
 /* SUB-SECTION:
    --------------------------------------------

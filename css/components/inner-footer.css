@@ -39,12 +39,12 @@
   top: 98px;
 }
 .inner-footer .links {
-  width: 340px;
+  width: auto;
   margin: 0;
   font-size: 13px;
   line-height: 18px;
   position: absolute;
-  right: 144px;
+  right: 0;
   top: 68px;
 }
 .inner-footer .links li {
@@ -65,7 +65,7 @@
   .inner-footer { height: auto; padding: 20px 0;}
   .inner-footer .logo { margin: 0 auto 20px; position: relative; left: auto; top: auto; }
   .inner-footer .tel { margin-bottom: 20px; display: block; text-align: center; position: relative; right: auto; top: auto; }
-  .inner-footer .links { width: auto; text-align: center; position: relative; right: auto; top: auto; }
+  .inner-footer .links { text-align: center; position: relative; right: auto; top: auto; }
   .inner-footer .links li { display: block;}
 }
 @media (max-width: 568px) {

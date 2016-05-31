@@ -2,6 +2,7 @@
    ==========================================================================
    Page Product
    ========================================================================== */
+/* Heading */
 .page-product .heading {
   margin: 64px 0 36px;
   font: normal 36px/60px 'Trebuchet MS', Arial, sans-serif;
@@ -11,6 +12,7 @@
   color: #e12586;
   letter-spacing: .026em;
 }
+/* Product-item */
 .page-product .product-item {
   margin: 50px 0 42px;
 }
@@ -20,9 +22,15 @@
   float: left;
 }
 .page-product .picture .slider-for {
+  height: 376px;
+  overflow: hidden;
   margin: 0 0 20px;
   padding: 0;
   list-style: none;
+}
+.page-product .picture .slider-for.slick-initialized {
+  height: auto;
+  overflow: visible;
 }
 .page-product .picture .slider-for li {
   border: 1px solid #ddd;
@@ -32,8 +40,14 @@
   height: auto;
 }
 .page-product .picture .slider-nav {
+  height: 88px;
+  overflow: hidden;
   margin: 0 -7px;
   padding-bottom: 40px;
+}
+.page-product .picture .slider-nav.slick-initialized {
+  height: auto;
+  overflow: visible;
 }
 .page-product .picture .slider-nav li {
   width: 33.3%;
@@ -112,12 +126,25 @@
 .page-product .product-card .more:hover {
   text-decoration: none;
 }
+/* Describe */
 .page-product .describe {
   max-width: 76%;
 }
-.page-product .table-responsive {
-  max-width: 100%;overflow-x: scroll;
+.page-product .describe ul li {
+  padding-left: 9px;
 }
+.page-product .describe ul li:before {
+  content: '-';
+  margin-left: -9px;
+  position: absolute;
+}
+.page-product .describe p {
+  margin:24px 0;
+}
+.page-product .describe .upper {
+  text-transform: uppercase;
+}
+/* Table-price */
 .page-product .table-price {
   width: 100%;
   min-width: 600px;
@@ -141,39 +168,22 @@
   font-weight: bold;
   text-transform: uppercase;
 }
-.page-product .featured {
-  margin: 82px 0 0 0;
-  padding: 0;
-  list-style: none;
-  text-align: center;
+.page-product .table-responsive {
+  max-width: 100%;overflow-x: scroll;
 }
-.page-product .featured .title {
+.page-product .table-responsive .table-price {
+  margin-top: 0;
+}
+/* Catalog */
+.page-product .catalog {
+  margin-top: 84px;
+  padding-bottom: 0;
+}
+.page-product .catalog .content-slide__title {
   margin-bottom: 50px;
   font: normal 36px/60px 'Trebuchet MS', Arial, sans-serif;
   text-transform: uppercase;
-}
-.page-product .featured .list:after { display: table; content: '\0020'; clear: both; }
-.page-product .featured li {
-  width: 25%;
-  margin: 0;
-  min-height: 242px;
-  float: left;
-  border: 1px solid #e5e6e5;
-}
-.page-product .featured li a {
-  height: 100%;
-  display: block;
-  width: 100%;
-  padding: 12px 34px;
   color: #403f3f;
-  text-decoration: none;
-}
-.page-product .featured li img {
-  width: 150px;
-  max-width: 100%;
-  height: auto;
-  display: block;
-  margin: 0 auto;
 }
 /* SUB-SECTION:
    --------------------------------------------
@@ -186,8 +196,9 @@
   .page-product .picture { width: 43%; }
   .page-product .product-card { width: 57%; padding-left: 20px; }
   .page-product .product-card .title { margin-bottom: 25px; }
-  .page-product .featured { display: none;}
   .page-product .table-price {    margin: 24px 0;}
+  .page-product .describe { max-width: none; }
+  .page-product .catalog { margin-top: 30px;}
 }
 @media (max-width: 767px) {
   .page-product .heading {margin: 10px 0; font-size: 26px; line-height: 40px;}
@@ -199,6 +210,7 @@
   .page-product .product-card .title { margin-bottom: 15px; }
   .page-product .product-card .list dt { flex: 1 45%; }
   .page-product .product-card .list dd { flex: 1 55%; }
+  .page-product .catalog .content-slide__title {font-size: 26px; line-height: 40px;}
 }
 @media (max-width: 666px) {
   .page-product .heading { font-size: 26px; line-height: 40px;}
